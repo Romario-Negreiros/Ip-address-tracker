@@ -41,6 +41,21 @@ a {
   text-align: center;
   font-size: 14px;
 }
+@media screen and (min-width: 400px) {
+  .a-header .a-header__title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .a-header .a-header__title {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .a-header .a-header__title {
+    font-size: 26px;
+  }
+}
 .a-header .fadeonbgscreen {
   margin-top: 20px;
   font-size: 12px;
@@ -70,6 +85,11 @@ a {
     width: 72%;
   }
 }
+@media screen and (min-width: 1000px) {
+  .a-header .a-header__inputwrapper {
+    width: 60%;
+  }
+}
 .a-header .a-header__inputwrapper input {
   color: #2b2b2b;
   width: 80%;
@@ -96,6 +116,23 @@ a {
   color: #969696;
   font-size: 12px;
 }
+@media screen and (min-width: 800px) {
+  .a-header .a-header__inputwrapper input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .a-header .a-header__inputwrapper input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .a-header .a-header__inputwrapper input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .a-header .a-header__inputwrapper input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .a-header .a-header__inputwrapper input::placeholder {
+    font-size: 14px;
+  }
+}
 .a-header .a-header__inputwrapper input:focus {
   outline: 0;
 }
@@ -107,6 +144,7 @@ a {
 @media screen and (min-width: 600px) {
   .a-header .a-header__inputwrapper input {
     width: 90%;
+    padding: 15px;
   }
 }
 .a-header .a-header__inputwrapper .a-header__imgwrapper {
@@ -126,8 +164,14 @@ a {
           justify-content: center;
 }
 .a-header .a-header__inputwrapper .a-header__imgwrapper img {
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 800px) {
+  .a-header .a-header__inputwrapper .a-header__imgwrapper img {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 400px) {
   .a-header .a-header__inputwrapper .a-header__imgwrapper {
@@ -175,6 +219,12 @@ a {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 800px) {
+  .b-trackres {
+    min-height: 130px;
+    top: 28%;
+  }
+}
 .b-trackres .b-trackres__infowrapper {
   text-align: center;
   margin-top: 10px;
@@ -215,6 +265,11 @@ a {
 @media screen and (min-width: 600px) {
   .b-trackres h2 {
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .b-trackres h2 {
+    font-size: 20px;
   }
 }
 

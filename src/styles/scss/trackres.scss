@@ -1,51 +1,58 @@
 .b-trackres {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: (100%-16%);
-    padding: 20px;
-    border-radius: 5px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: (100%-16%);
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include mQ(600px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include mQ(800px) {
+      min-height: 130px;
+      top: 28%;
+  }
+  .b-trackres__infowrapper {
+    text-align: center;
+    margin-top: 10px;
+    &:first-child {
+      margin: 0;
+    }
     @include mQ(600px) {
-        flex-direction: row;
-        justify-content: space-between;
+      align-self: stretch;
+      margin: 0;
+      text-align: left;
+      box-shadow: 10px 0 1px -9px $darkgray;
+      flex-basis: 25%;
+      padding-left: 15px;
+      &:last-child {
+        box-shadow: none;
+      }
+      &:first-child {
+        padding: 0;
+      }
     }
-    .b-trackres__infowrapper {
-        text-align: center;
-        margin-top: 10px;
-        &:first-child {
-            margin: 0;
-        }
-        @include mQ(600px) {
-            align-self: stretch;
-            margin: 0;
-            text-align: left;
-            box-shadow: 10px 0 1px -9px $darkgray;
-            flex-basis: 25%;
-            padding-left: 15px;
-            &:last-child {
-                box-shadow: none;
-            }
-            &:first-child {
-                padding: 0;
-            }
-        }
+  }
+  small {
+    font-size: 12px;
+    color: $darkgray;
+  }
+  h2 {
+    margin-top: 6px;
+    font-size: 14px;
+    color: $verydarkgray;
+    @include mQ(600px) {
+      font-size: 16px;
     }
-    small {
-        font-size: 12px;
-        color: $darkgray;
+    @include mQ(800px) {
+      font-size: 20px;
     }
-    h2 {
-        margin-top: 6px;
-        font-size: 14px;
-        color: $verydarkgray;
-        @include mQ(600px) {
-            font-size: 16px;
-        }
-    }
+  }
 }
