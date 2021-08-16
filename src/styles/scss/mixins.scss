@@ -1,0 +1,5 @@
+@mixin mQ($wdt) {
+    @media screen and (min-width: $wdt) {
+        @content;
+    }
+}

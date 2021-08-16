@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/css/index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="src/scripts/index.js" defer type="script"></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <header class="a-header">
+        <h1 class="a-header__title">IP Address Tracker</h1>
+        <label for="text" class="fadeonbgscreen">Search for any IP address or domain IP Address Location</label>
+        <div class="a-header__inputwrapper">
+          <input
+            name="text"
+            placeholder="Search for any IP address or domain IP Address Location"
+            aria-placeholder="Search for any IP address or domain IP Address Location"
+            id="text"
+          />
+          <div class="a-header__imgwrapper">
+            <img src="./images/icon-arrow.svg" alt="search" />
+          </div>
+        </div>
+      </header>
+      <section class="b-trackres">
+        <div class="b-trackres__infowrapper">
+          <small>IP ADDRESS</small>
+          <h2 class="ip">192.214.174.101</h2>
+        </div>
+        <div class="b-trackres__infowrapper">
+          <small>LOCATION</small>
+          <h2 class="ip">Brooklyn, NY 10001</h2>
+        </div>
+        <div class="b-trackres__infowrapper">
+          <small>TIMEZONE</small>
+          <h2 class="ip">UTC - 05:00</h2>
+        </div>
+        <div class="b-trackres__infowrapper">
+          <small>ISP</small>
+          <h2 class="isp">SpaceX Starlink</h2>
+        </div>
+      </section>
+      <section class="c-map">
+
+      </section>
+    </main>
+  </body>
+</html>
