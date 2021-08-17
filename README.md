@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Screenshot
 
-Ups, not ready yet!
+![](./images/ipaddress.png)
 
 ### Links
 
