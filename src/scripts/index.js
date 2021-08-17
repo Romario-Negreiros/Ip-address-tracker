@@ -46,7 +46,7 @@ const getIpAddressOrDomainData = (mode, value) => {
             $('.ip').html(ip);
             $('.isp').html(isp);
             $('.location').html(`${city}, ${country}, ${postalCode}`);
-            $('.timezone').html('UTC ' + timezone);
+            $('.timezone').html('UTC' + timezone);
             setMap(lat, lng);
         })
         .catch(err => {
