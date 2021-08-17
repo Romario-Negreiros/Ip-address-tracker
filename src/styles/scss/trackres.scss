@@ -1,6 +1,6 @@
 .b-trackres {
   position: absolute;
-  top: 25%;
+  top: 150px;
   left: 50%;
   z-index: 10;
   transform: translateX(-50%);
@@ -12,13 +12,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @include mQ(400px) {
+    width: (100%-25%);
+  }
   @include mQ(600px) {
     flex-direction: row;
     justify-content: space-between;
-  }
-  @include mQ(800px) {
-      min-height: 130px;
-      top: 28%;
+    min-height: 130px;
+    width: (100%-16%);
   }
   .b-trackres__infowrapper {
     text-align: center;
@@ -31,8 +32,9 @@
       margin: 0;
       text-align: left;
       box-shadow: 10px 0 1px -9px $darkgray;
-      flex-basis: 25%;
       padding-left: 15px;
+      padding-right: 20px;
+      width: 25%;
       &:last-child {
         box-shadow: none;
       }

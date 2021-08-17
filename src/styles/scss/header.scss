@@ -35,6 +35,9 @@
     align-items: center;
     border-radius: 5px;
     overflow: hidden;
+    @include mQ(400px) {
+      width: 90%;
+    }
     @include mQ(600px) {
       margin-top: 20px;
       width: 72%;
@@ -66,6 +69,7 @@
       }
     }
     .a-header__imgwrapper {
+      cursor: pointer;
       width: 20%;
       align-self: stretch;
       background: $verydarkgray;

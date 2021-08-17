@@ -79,6 +79,11 @@ a {
   border-radius: 5px;
   overflow: hidden;
 }
+@media screen and (min-width: 400px) {
+  .a-header .a-header__inputwrapper {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 600px) {
   .a-header .a-header__inputwrapper {
     margin-top: 20px;
@@ -148,6 +153,7 @@ a {
   }
 }
 .a-header .a-header__inputwrapper .a-header__imgwrapper {
+  cursor: pointer;
   width: 20%;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
@@ -186,7 +192,7 @@ a {
 
 .b-trackres {
   position: absolute;
-  top: 25%;
+  top: 150px;
   left: 50%;
   z-index: 10;
   -webkit-transform: translateX(-50%);
@@ -209,6 +215,11 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 400px) {
+  .b-trackres {
+    width: 75%;
+  }
+}
 @media screen and (min-width: 600px) {
   .b-trackres {
     -webkit-box-orient: horizontal;
@@ -218,12 +229,8 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-}
-@media screen and (min-width: 800px) {
-  .b-trackres {
     min-height: 130px;
-    top: 28%;
+    width: 84%;
   }
 }
 .b-trackres .b-trackres__infowrapper {
@@ -242,9 +249,9 @@ a {
     text-align: left;
     -webkit-box-shadow: 10px 0 1px -9px #969696;
             box-shadow: 10px 0 1px -9px #969696;
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
     padding-left: 15px;
+    padding-right: 20px;
+    width: 25%;
   }
   .b-trackres .b-trackres__infowrapper:last-child {
     -webkit-box-shadow: none;
@@ -276,9 +283,28 @@ a {
 
 .c-map {
   position: relative;
-  top: 0;
+  top: 100px;
   left: 0;
   z-index: 5;
   height: 100vh;
   width: 100%;
+}
+@media screen and (min-width: 400px) {
+  .c-map {
+    top: 0;
+  }
+}
+
+body {
+  background: #2b2b2b;
+}
+
+.error_warning {
+  position: absolute;
+  top: 30px;
+  width: 80%;
+  left: 10%;
+  background: rgba(255, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 35px;
 }
