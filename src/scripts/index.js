@@ -1,4 +1,4 @@
-const errBox = $('.error_warning')
+const errBox = $('.error_warning');
 errBox.hide();
 
 const api_url = 'https://geo.ipify.org/api/v1';
@@ -62,16 +62,9 @@ const setMap = (latitude = 1, longitude = 0) => {
     L.marker([latitude, longitude]).addTo(map);
 };
 
-// Loads LeaftletJS either in the current user's location or in a default place
+// Loads with the user's ip address
 $(() => {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(position => {
-            const {
-                coords: { latitude, longitude },
-            } = position;
-            setMap(latitude, longitude);
-        });
-    } else setMap();
+    $.getJSON('https://api.ipify.org?format=json', ({ ip }) => getIpAddressOrDomainData('ipAddress', ip));
 });
 
 // Event handlers for make the search
