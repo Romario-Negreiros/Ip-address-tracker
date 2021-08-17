@@ -193,11 +193,11 @@ a {
 .b-trackres {
   position: absolute;
   top: 150px;
-  left: 50%;
+  left: 60%;
   z-index: 10;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 84%;
+  width: 70%;
   padding: 20px;
   border-radius: 5px;
   background: #fff;
@@ -222,6 +222,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .b-trackres {
+    left: 50%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -266,6 +267,7 @@ a {
   color: #969696;
 }
 .b-trackres h2 {
+  word-wrap: break-word;
   margin-top: 6px;
   font-size: 14px;
   color: #2b2b2b;
@@ -283,16 +285,11 @@ a {
 
 .c-map {
   position: relative;
-  top: 100px;
+  top: 0px;
   left: 0;
   z-index: 5;
   height: 100vh;
   width: 100%;
-}
-@media screen and (min-width: 400px) {
-  .c-map {
-    top: 0;
-  }
 }
 
 body {

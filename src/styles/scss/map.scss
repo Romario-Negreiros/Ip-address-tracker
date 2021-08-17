@@ -1,11 +1,8 @@
 .c-map {
     position: relative;
-    top: 100px;
+    top: 0px;
     left: 0;
     z-index: 5;
     height: 100vh;
     width: 100%;
-    @include mQ(400px) {
-        top: 0;
-    }
 }

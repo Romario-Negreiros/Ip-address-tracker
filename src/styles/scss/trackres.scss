@@ -1,10 +1,10 @@
 .b-trackres {
   position: absolute;
   top: 150px;
-  left: 50%;
+  left: 60%;
   z-index: 10;
   transform: translateX(-50%);
-  width: (100%-16%);
+  width: (100%-30%);
   padding: 20px;
   border-radius: 5px;
   background: #fff;
@@ -16,6 +16,7 @@
     width: (100%-25%);
   }
   @include mQ(600px) {
+    left: 50%;
     flex-direction: row;
     justify-content: space-between;
     min-height: 130px;
@@ -48,6 +49,7 @@
     color: $darkgray;
   }
   h2 {
+    word-wrap: break-word;
     margin-top: 6px;
     font-size: 14px;
     color: $verydarkgray;
